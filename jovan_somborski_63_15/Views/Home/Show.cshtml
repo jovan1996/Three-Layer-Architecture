@@ -1,0 +1,93 @@
+﻿@using biznis.BussinessLayer.DTO
+
+@model jovan_somborski_63_15.Models.Application.HomeViewModel
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- HEADER -->
+<header id="header">
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <div class="page-header-bg" style="background-image: url('/Content/Images/@Model.Header.src');" data-stellar-background-ratio="0.5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 text-center">
+                    <h1 class="text-uppercase">@Model.Header.heading</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /PAGE HEADER -->
+</header>
+<!-- /HEADER -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <div id="posts">
+              
+                    <div class="section-row">
+        @foreach (PostDTO p in Model.Posts)
+        {
+            <h3>@p.heading</h3>
+            <p>asdasd</p>
+                        <p>Est in saepe accusam luptatum. Purto deleniti philosophia eum ea, impetus copiosae id mel. Vis at ignota delenit democritum, te summo tamquam delicata pro. Utinam concludaturque et vim, mei ullum intellegam ei. Eam te illum nostrud, suas sonet corrumpit ea per. Ut sea regione posidonium. Pertinax gubergren ne qui, eos an harum mundi quaestio.</p>
+                        <figure class="pull-right">
+                            <img src="~/Content/Images/@p.src" alt="">
+                            <figcaption>
+                                @p.ImageAbout
+                            </figcaption>
+                        </figure>
+                        <p>@p.paragraph2</p>
+
+        }
+                     
+
+                    </div>
+                </div>
+                <!--end of #posts-->
+                <!--Pagination-->
+
+
+                <nav aria-label="Page navigation example" class="text-center" id="pagination">
+                    <ul class="pagination">
+                 
+                    </ul>
+                </nav>
+                <!--Pagination-->
+
+
+            </div>
+            <!--end of col-md-8-->
+
+            <div class="col-md-4">
+                <!-- category widget -->
+                <div class="aside-widget">
+                    <div class="section-title">
+                        <h2 class="title">Categories</h2>
+                    </div>
+                    <div class="category-widget">
+                        <ul>
+
+                            @foreach (CategoryDTO c in Model.Categories)
+                            {
+                                <li><a href="#" data-number="@c.Number" data-category="@c.Id">@c.Name <span>@c.Number</span></a></li>
+                            }
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- /category widget -->
+           
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /SECTION -->

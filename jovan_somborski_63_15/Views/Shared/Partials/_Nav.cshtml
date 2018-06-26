@@ -1,0 +1,40 @@
+﻿
+
+@using Microsoft.AspNet.Identity
+
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        @Html.ActionLink("Posty", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "" })</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "" })</li>
+            <li>@Html.ActionLink("Author", "Autor", "Home", new { area = "" }, new { @class = "" })</li>
+        </ul>
+        @Html.Partial("_LoginPartial")
+
+
+       
+
+        <ul class="nav navbar-nav ">
+            @if (Request.IsAuthenticated && User.IsInRole("admin"))
+            {
+                <li>@Html.ActionLink("Messages", "Index", "Contact", new { area = "" }, new { @class = "" })</li>
+                <li>@Html.ActionLink("Categories", "Index", "Category", new { area = "admin" }, new { @class = "" })</li>
+
+
+            }
+
+            @if (Request.IsAuthenticated)
+            {
+                <li>@Html.ActionLink("Posts", "index", "Post", new { Area = "Admin" }, new { })</li>
+            }
+        </ul>
+    </div>
+</div>

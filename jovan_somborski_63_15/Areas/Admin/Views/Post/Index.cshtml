@@ -1,0 +1,83 @@
+﻿@model IEnumerable<biznis.BussinessLayer.DTO.PostDTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Posts</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>    
+        <th>
+            @Html.DisplayNameFor(model => model.heading)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paragraph)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.publish)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageAbout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paragraph2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.username)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.src)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.heading)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paragraph)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.publish)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageAbout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paragraph2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.username)
+        </td>
+      
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryName)
+        </td>
+        <td>
+            <div class="post post-row">
+                <a class="post-img" href="#"><img src="~/Content/Images/@Html.DisplayFor(modelItem => item.src)" alt=""></a>
+                <div class="post-body">
+                   
+                </div>
+            </div>
+           
+        </td>
+        <td>
+
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1f777ba40e064edaa8d452f85922cd2e" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="skiiiModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="skiiiModel.AspNetRole" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="skiiiModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="skiiiModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="skiiiModel.AspNetUser" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="skiiiModel.Contact" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="skiiiModel.sysdiagram" Width="1.5" PointX="0.625" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="skiiiModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="skiiiModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="skiiiModel.FK_Contact_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="skiiiModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="skiiiModel.Category" Width="1.5" PointX="7.5" PointY="3.875" />
+        <EntityTypeShape EntityType="skiiiModel.Header" Width="1.5" PointX="10" PointY="6.5" />
+        <EntityTypeShape EntityType="skiiiModel.Image" Width="1.5" PointX="7.5" PointY="6.625" />
+        <AssociationConnector Association="skiiiModel.FK_Header_Image" />
+        <EntityTypeShape EntityType="skiiiModel.UserLogin" Width="1.5" PointX="3" PointY="8.375" />
+        <AssociationConnector Association="skiiiModel.FK_UserLogins_AspNetUsers" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

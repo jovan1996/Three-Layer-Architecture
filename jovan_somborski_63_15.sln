@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jovan_somborski_63_15", "jovan_somborski_63_15\jovan_somborski_63_15.csproj", "{8D401CAE-1A18-4669-92C3-2ACE960B2CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "biznis", "biznis\biznis.csproj", "{B79C5D74-8191-478B-B30B-2BF00339984C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D401CAE-1A18-4669-92C3-2ACE960B2CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D401CAE-1A18-4669-92C3-2ACE960B2CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D401CAE-1A18-4669-92C3-2ACE960B2CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D401CAE-1A18-4669-92C3-2ACE960B2CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79C5D74-8191-478B-B30B-2BF00339984C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79C5D74-8191-478B-B30B-2BF00339984C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79C5D74-8191-478B-B30B-2BF00339984C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79C5D74-8191-478B-B30B-2BF00339984C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
